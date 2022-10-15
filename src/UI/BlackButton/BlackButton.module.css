@@ -1,0 +1,24 @@
+@font-face {
+    font-family: 'Stem medium';
+    src: url('../../fonts/Stem-Medium.ttf');
+}
+
+.main {
+    cursor: pointer;
+    background-color: #373A36;
+    padding: 15px 160px;
+    border-radius: 18px;
+    color: #fff;
+    font-size: 30px;
+    font-family: 'Stem medium';
+    text-align: center;
+    width: 70%;
+    border: 3px solid transparent;
+    transition: .3s;
+}
+
+.main:hover {
+    background-color: transparent;
+    color: #373A36;
+    border-color: #373A36;
+}
