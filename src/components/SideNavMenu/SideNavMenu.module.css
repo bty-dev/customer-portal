@@ -51,6 +51,7 @@
     color: #fff;
     border-left-color: #373A36;
     border-left-width: 3px;
+    border-radius: 22px;
 }
 .list__item:before {
     content: "";
@@ -58,6 +59,16 @@
     height: 30px;
     display: inline-block;
     background: url("first_ic.svg") no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.list__item1:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("f_ic.svg") no-repeat;
     background-size: cover;
     vertical-align: middle;
     margin-right: 20px;

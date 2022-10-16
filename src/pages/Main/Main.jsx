@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import classes from './Main.module.css';
 import SideNavMenu from "../../components/SideNavMenu/SideNavMenu";
 
@@ -14,6 +14,8 @@ import ChooseCard from "../../components/ChooseCard/ChooseCard";
 import Calendar from "../../components/Calendar/Calendar";
 import TableItem from "../../components/TableItem/TableItem";
 import {Link, useNavigate} from "react-router-dom";
+import {logDOM} from "@testing-library/react";
+import axios from "axios";
 
 const Main = () => {
 
@@ -31,6 +33,22 @@ const Main = () => {
     ])
 
     const navigate = useNavigate();
+
+    useEffect(() => {
+        getAboutMe();
+    }, [])
+
+    const getAboutMe = () => {
+        axios.get("https://localhost:7173/Auth/aboutme", {
+            headers: {
+                "Authorization": `Bearer ${localStorage.getItem("token")}`
+            },
+        })
+            .then(res => {
+                console.log(res.data)
+            })
+            .catch(err => console.log(err))
+    }
 
     return (
         <div className={classes.wrapper}>

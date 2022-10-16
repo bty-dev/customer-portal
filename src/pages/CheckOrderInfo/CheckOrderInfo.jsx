@@ -5,13 +5,16 @@ import classes from "../CreateOrder/CreateOrder.module.css";
 import SideNavMenu from "../../components/SideNavMenu/SideNavMenu";
 import photo from "../Main/photo.svg";
 import notif from "../Main/notif.svg";
-import {Link} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 import exit from "../Main/exit.svg";
 import BlackButton from "../../UI/BlackButton/BlackButton";
 import YellowButton from "../../UI/YellowButton/YellowButton";
 import ModalOrderAccept from "../../UI/Modals/ModalOrderAccept/ModalOrderAccept";
 
 const CheckOrderInfo = () => {
+
+    const navigate = useNavigate();
+
     return (
         <div className={classes.wrapper}>
             <SideNavMenu choosen="create"/>
@@ -96,7 +99,7 @@ const CheckOrderInfo = () => {
                         <BlackButton>
                             Распечатать
                         </BlackButton>
-                        <YellowButton>
+                        <YellowButton onClick={() => navigate("/orders")}>
                             Назад
                         </YellowButton>
                     </div>

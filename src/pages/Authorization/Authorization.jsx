@@ -3,7 +3,7 @@ import classes from './Authorization.module.css';
 
 import logo from './logo.svg';
 import BlackButton from "../../UI/BlackButton/BlackButton";
-
+import { useNavigate } from "react-router-dom";
 import axios from 'axios';
 import Swal from "sweetalert2";
 
@@ -13,6 +13,9 @@ const Authorization = () => {
 
     const [token, setToken] = useState("");
 
+    const navigate = useNavigate();
+
+
     const logIn = () => {
         try{
             axios.post("https://localhost:7173/Auth/login", {
@@ -21,6 +24,8 @@ const Authorization = () => {
             })
                 .then(res => {
                     if(res.status === 200) {
+                        setToken(res.data)
+                        localStorage.setItem("token", res.data);
                         Swal.fire({
                             position: 'center',
                             icon: 'success',
@@ -29,7 +34,7 @@ const Authorization = () => {
                             timer: 1500
                         })
                             .then(() => {
-                                window.location.pathname = "/main"
+                                navigate("/main");
                             })
 
 
