@@ -7,6 +7,7 @@ import CreateOrder from "./pages/CreateOrder/CreateOrder";
 import Orders from "./pages/Orders/Orders";
 import CheckOrderInfo from "./pages/CheckOrderInfo/CheckOrderInfo";
 import OrdersArchive from "./pages/OrdersArchive/OrdersArchive";
+import CallToDispatcher from "./pages/CallToDispatcher/CallToDispatcher";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/orders" element={<Orders/>}/>
             <Route path="/checkOrder" element={<CheckOrderInfo/>}/>
             <Route path="/ordersArchive" element={<OrdersArchive/>}/>
+            <Route path="/callDispatcher" element={<CallToDispatcher/>}/>
         </Routes>
     </div>
   );

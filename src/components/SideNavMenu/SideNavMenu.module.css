@@ -110,3 +110,18 @@
     color: #000;
     filter: brightness(0);
 }
+
+.list__item5:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("five_ic.svg") no-repeat;
+    filter: invert(1);
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 20px;
+    color: #000;
+    filter: brightness(0);
+
+}

@@ -1,0 +1,266 @@
+@font-face {
+    font-family: 'Stem regular';
+    src: url('../../fonts/Stem-Regular.ttf');
+}
+@font-face {
+    font-family: 'Stem bold';
+    src: url('../../fonts/Stem-Bold.ttf');
+}
+@font-face {
+    font-family: 'Stem light';
+    src: url('../../fonts/Stem-Light.ttf');
+}
+@font-face {
+    font-family: 'Stem semilight';
+    src: url('../../fonts/Stem-SemiLight.ttf');
+}
+@font-face {
+    font-family: 'Stem thin';
+    src: url('../../fonts/Stem-Thin.ttf');
+}
+@font-face {
+    font-family: 'Stem medium';
+    src: url('../../fonts/Stem-Medium.ttf');
+}
+
+.wrapper {
+    background-color: #FAB439;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.main__content {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 80%;
+
+}
+
+.main__profile {
+    justify-self: flex-end;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 35px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.profile__name {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    color: #000;
+    margin-right: 30px;
+}
+
+.name {
+    font-size: 20px;
+    font-family: 'Stem semilight';
+    margin-bottom: -10px;
+}
+
+.exp {
+    font-size: 15px;
+    font-family: 'Stem light';
+    padding-right: 20px;
+
+
+}
+.photo {
+    margin-right: 15px;
+}
+
+.notif {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    transition: .2s;
+}
+.notif:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+.exit {
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+    transition: .2s;
+    padding-top: -100px;
+}
+.exit:hover {
+    cursor: pointer;
+    opacity: .8;
+}
+
+.choose__part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 28px;
+}
+
+.choose__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 28px;
+}
+
+.info__title {
+    font-size: 36px;
+    font-family: 'Stem medium';
+    color: #000;
+    margin-top: 18px;
+    margin-bottom: 0;
+}
+
+.info__sub {
+    font-size: 15px;
+    font-family: 'Stem semilight';
+    color: #000;
+}
+
+.choose__list {
+    display: flex;
+    margin-left: 28px;
+}
+
+.calendar__part {
+    margin-left: 28px;
+    margin-top: 20px;
+}
+
+.calendar__title {
+    color: #000;
+    font-size: 36px;
+    font-family: 'Stem medium';
+}
+
+.claims__part {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 28px;
+    width: 60%;
+}
+
+.claim__title {
+    font-size: 24px;
+    color: #000;
+    font-family: 'Stem medium';
+    margin-bottom: 10px;
+}
+
+.title__span {
+    font-size: 24px;
+    color: #FAB439;
+    font-family: 'Stem medium';
+}
+
+.table {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 90%;
+    margin-left: 20px;
+}
+
+.table__list {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.table__items {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+    justify-self: center;
+}
+
+.table__title__item {
+    font-size: 20px;
+    color: #373A36;
+    font-family: 'Stem medium';
+}
+
+.first__line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.input__label {
+    font-size: 20px;
+    font-family: 'Stem semilight';
+}
+
+.input {
+    outline: none;
+    border: none;
+    background-color: #F3F3F3;
+    border-radius: 12px;
+    width: 80%;
+    padding: 15px 15px;
+    margin-left: 20px;
+}
+
+.label__span {
+    color: #FF0000;
+}
+
+.select {
+    outline: none;
+    border: none;
+    background-color: #F3F3F3;
+    border-radius: 12px;
+    width: 30%;
+    padding: 15px 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.rashet {
+    font-size: 20px;
+    font-family: 'Stem semilight';
+    margin-left: 14px;
+}
+
+.rashet_yel {
+    color: #FAB439;
+}
+
+.txtarea {
+    outline: none;
+    border: none;
+    background-color: #F3F3F3;
+    border-radius: 12px;
+    width: 80%;
+    padding: 15px 15px;
+    margin-left: 20px;
+}

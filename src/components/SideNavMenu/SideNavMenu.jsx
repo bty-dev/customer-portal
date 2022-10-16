@@ -13,6 +13,7 @@ const SideNavMenu = ({choosen}) => {
                 <Link style={{textDecoration: "none", color: "#373A36"}}  to="/createOrder"><li className={choosen === "create" ? classes.list__item : classes.list__item2}>Создать заявку</li></Link>
                 <Link style={{textDecoration: "none", color: "#373A36"}}  to="/ordersArchive"><li className={choosen === "ordersArchive" ? classes.list__item : classes.list__item3}>Архив заявок</li></Link>
                 <Link style={{textDecoration: "none", color: "#373A36"}}  to="/main"><li className={classes.list__item4}>Настройки</li></Link>
+                <Link style={{textDecoration: "none", color: "#373A36"}}  to="/callDispatcher"><li className={choosen === "callDispatcher" ? classes.list__item : classes.list__item5}>Диспетчер</li></Link>
             </ul>
         </div>
     );
