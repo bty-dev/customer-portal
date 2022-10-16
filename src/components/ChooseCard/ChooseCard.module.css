@@ -1,0 +1,69 @@
+@font-face {
+    font-family: 'Stem regular';
+    src: url('../../fonts/Stem-Regular.ttf');
+}
+@font-face {
+    font-family: 'Stem bold';
+    src: url('../../fonts/Stem-Bold.ttf');
+}
+@font-face {
+    font-family: 'Stem light';
+    src: url('../../fonts/Stem-Light.ttf');
+}
+@font-face {
+    font-family: 'Stem semilight';
+    src: url('../../fonts/Stem-SemiLight.ttf');
+}
+@font-face {
+    font-family: 'Stem thin';
+    src: url('../../fonts/Stem-Thin.ttf');
+}
+@font-face {
+    font-family: 'Stem medium';
+    src: url('../../fonts/Stem-Medium.ttf');
+}
+.main {
+    cursor: pointer;
+    border: 2px solid #333333;
+    border-radius: 13px;
+    position: relative;
+    overflow: hidden;
+    height: 270px;
+    width: 230px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    transition: .3s;
+}
+.main:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.img {
+    justify-self: center;
+    align-self: flex-start;
+    padding: 30px 40px;
+}
+
+.choose__info {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    background-color: #333333;
+    padding: 10px 20px;
+}
+
+.info__title {
+    font-family: 'Stem semilight';
+    color: #fff;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.info__subtitle {
+    font-family: 'Stem semilight';
+    color: #fff;
+    font-size: 12px;
+}

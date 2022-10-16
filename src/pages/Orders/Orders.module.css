@@ -115,6 +115,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-left: 28px;
 }
 
 .choose__info {

@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'Stem regular';
+    src: url('../../fonts/Stem-Regular.ttf');
+}
+@font-face {
+    font-family: 'Stem bold';
+    src: url('../../fonts/Stem-Bold.ttf');
+}
+@font-face {
+    font-family: 'Stem light';
+    src: url('../../fonts/Stem-Light.ttf');
+}
+@font-face {
+    font-family: 'Stem semilight';
+    src: url('../../fonts/Stem-SemiLight.ttf');
+}
+@font-face {
+    font-family: 'Stem thin';
+    src: url('../../fonts/Stem-Thin.ttf');
+}
+@font-face {
+    font-family: 'Stem medium';
+    src: url('../../fonts/Stem-Medium.ttf');
+}
+
+.main {
+    border: 2px solid #333333;
+    border-radius: 6px;
+    width: 380px;
+    height: 370px;
+    margin: 10px;
+}
+
+.days_of_week_container,
+.calendar_container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    text-align: right;
+}
+
+
+.calendar_container div:hover {
+
+    opacity: .8;
+    cursor: pointer;
+}
+
+.title {
+    color: #000;
+    font-size: 24px;
+    font-family: 'Stem medium';
+    text-align: center;
+}
+
+.week__day {
+    color: #000;
+    font-size: 15px;
+    font-family: 'Stem semilight';
+    text-align: center;
+}
+
+.day {
+    transition: .2s;
+    color: #fff;
+    background-color: #333333;
+    padding: 5px 4px;
+    font-size: 15px;
+    font-family: 'Stem semilight';
+    margin: 10px;
+    border-radius: 6px;
+    text-align: center;
+}
+.day_selected {
+    color: #fff;
+    background-color: #FAB439;
+    padding: 5px 4px;
+    font-size: 15px;
+    font-family: 'Stem semilight';
+    margin: 10px;
+    border-radius: 6px;
+    text-align: center;
+}

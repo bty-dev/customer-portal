@@ -1,0 +1,67 @@
+@font-face {
+    font-family: 'Stem regular';
+    src: url('../../../fonts/Stem-Regular.ttf');
+}
+@font-face {
+    font-family: 'Stem bold';
+    src: url('../../../fonts/Stem-Bold.ttf');
+}
+@font-face {
+    font-family: 'Stem light';
+    src: url('../../../fonts/Stem-Light.ttf');
+}
+@font-face {
+    font-family: 'Stem semilight';
+    src: url('../../../fonts/Stem-SemiLight.ttf');
+}
+@font-face {
+    font-family: 'Stem thin';
+    src: url('../../../fonts/Stem-Thin.ttf');
+}
+@font-face {
+    font-family: 'Stem medium';
+    src: url('../../../fonts/Stem-Medium.ttf');
+}
+
+html,body{
+    overflow-x: hidden;
+}
+.modal {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    display: none;
+    backdrop-filter: blur(10px);
+}
+
+.modal.active {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__content {
+    border-radius: 20px;
+    max-width: 900px;
+
+    background-color: #fff;
+    text-align: center;
+    padding: 20px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.content__info {
+    font-size: 36px;
+    font-family: 'Stem medium';
+}
+
+.info__subtitle {
+    font-size: 20px;
+    font-family: 'Stem semilight';
+}

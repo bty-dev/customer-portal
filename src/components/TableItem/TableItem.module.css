@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Stem regular';
+    src: url('../../fonts/Stem-Regular.ttf');
+}
+@font-face {
+    font-family: 'Stem bold';
+    src: url('../../fonts/Stem-Bold.ttf');
+}
+@font-face {
+    font-family: 'Stem light';
+    src: url('../../fonts/Stem-Light.ttf');
+}
+@font-face {
+    font-family: 'Stem semilight';
+    src: url('../../fonts/Stem-SemiLight.ttf');
+}
+@font-face {
+    font-family: 'Stem thin';
+    src: url('../../fonts/Stem-Thin.ttf');
+}
+@font-face {
+    font-family: 'Stem medium';
+    src: url('../../fonts/Stem-Medium.ttf');
+}
+
+.main {
+    cursor: pointer;
+    margin:  10px 30px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px solid #333333;
+    padding: 10px 40px;
+    border-radius: 6px;
+}
+
+.number {
+    color: #373A36;
+    font-size: 20px;
+    font-family: 'Stem semilight';
+}
+
+.number:before {
+    content: "";
+    background: url("message_ic.svg") no-repeat;
+    background-size: contain;
+    width: 25px;
+    height: 20px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.text {
+    color: #373A36;
+    font-size: 20px;
+    font-family: 'Stem semilight';
+}
+.span {
+    text-transform: uppercase;
+    color: #FAB439;
+}

@@ -1,0 +1,101 @@
+@font-face {
+    font-family: 'Stem semilight';
+    src: url('../../fonts/Stem-SemiLight.ttf');
+}
+* {
+    font-family: 'Stem semilight';
+    font-size: 20px;
+}
+.main {
+    height: 100%;
+    width: 20%;
+    background-color: #fff;
+    border-right: 1px solid #EEEEEE;
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logo {
+    width: 230px;
+    height: 50px;
+    position: relative;
+    top: 45px;
+}
+
+.list {
+    margin-top: 100px;
+    height: 40%;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    width: 60%;
+    margin-left: -100px;
+
+}
+
+.list__item {
+    background-color: #FAB439;
+    width: 100%;
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+    padding: 20px 15px;
+    color: #fff;
+    border-left-color: #373A36;
+    border-left-width: 3px;
+}
+.list__item:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("first_ic.svg") no-repeat;
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 20px;
+}
+.list__item2:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("second_ic.svg") no-repeat;
+    filter: invert(1);
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 20px;
+    filter: brightness(0);
+}
+.list__item3:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("third_ic.svg") no-repeat;
+    filter: invert(1);
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 20px;
+    filter: brightness(0);
+}
+.list__item4:before {
+    content: "";
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    background: url("four_ic.svg") no-repeat;
+    filter: invert(1);
+    background-size: cover;
+    vertical-align: middle;
+    margin-right: 20px;
+    color: #000;
+    filter: brightness(0);
+}

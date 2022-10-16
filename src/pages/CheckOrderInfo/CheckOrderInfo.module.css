@@ -33,11 +33,6 @@
     align-items: center;
     background-color: #fff;
     position: relative;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-}
-body::-webkit-scrollbar {
-    display: none;
 }
 
 .main__content {
@@ -115,6 +110,7 @@ body::-webkit-scrollbar {
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
+    margin-left: 28px;
 }
 
 .choose__info {
@@ -207,4 +203,64 @@ body::-webkit-scrollbar {
     font-size: 20px;
     color: #373A36;
     font-family: 'Stem medium';
+}
+
+.first__line {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 20px;
+
+}
+
+.input__label {
+    font-size: 20px;
+    font-family: 'Stem semilight';
+}
+
+.input {
+    outline: none;
+    border: none;
+    background-color: #F3F3F3;
+    border-radius: 12px;
+    width: 80%;
+    padding: 15px 15px;
+    margin-left: 20px;
+}
+
+.label__span {
+    color: #FF0000;
+}
+
+.select {
+    outline: none;
+    border: none;
+    background-color: #F3F3F3;
+    border-radius: 12px;
+    width: 30%;
+    padding: 15px 15px;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.rashet {
+    font-size: 20px;
+    font-family: 'Stem semilight';
+    margin-left: 14px;
+}
+
+.rashet_yel {
+    color: #FAB439;
+}
+
+.txtarea {
+    outline: none;
+    border: none;
+    background-color: #F3F3F3;
+    border-radius: 12px;
+    width: 80%;
+    padding: 15px 15px;
+    margin-left: 20px;
 }
