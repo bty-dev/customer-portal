@@ -10,6 +10,7 @@ import BlackButton from "../../UI/BlackButton/BlackButton";
 import YellowButton from "../../UI/YellowButton/YellowButton";
 import ModalOrderAccept from "../../UI/Modals/ModalOrderAccept/ModalOrderAccept";
 import ModalOrderDeny from "../../UI/Modals/ModalOrderDeny/ModalOrderDeny";
+import Swal from "sweetalert2";
 
 const CallToDispatcher = () => {
     return (
@@ -53,7 +54,15 @@ const CallToDispatcher = () => {
 
                     </div>
                     <div style={{width: "50%"}}>
-                        <YellowButton>
+                        <YellowButton onClick={() => {
+                            Swal.fire({
+                                position: 'center',
+                                icon: 'success',
+                                title: 'Ваш запрос отправлен!',
+                                showConfirmButton: false,
+                                timer: 1500
+                            })
+                        }}>
                             Отправить
                         </YellowButton>
                     </div>
